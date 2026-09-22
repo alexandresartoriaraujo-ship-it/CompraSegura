@@ -8,9 +8,9 @@ public class Cartao extends Pagamento{
 
     @Override
     public void processar(double valor) {
-        if (valor > limite){
+        if (valor > limite) {
             IO.println("Compra negada, limite insuficiente");
-        }else {
+        } else {
             IO.println("Compra aprovada, transação: " + getId());
         }
     }
